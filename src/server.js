@@ -13,7 +13,6 @@ function createApp(engine = new DecisionEngine({ timeoutMs: Number(process.env.J
   });
 
   app.post('/decide', async (req, res) => {
-    c
     const state = req.body;
     if (!state || !state.trex || !(state.obstacle || state.obstacles?.length)) {
       return res.status(400).json({ error: 'body must include trex and obstacle (or obstacles[])' });
