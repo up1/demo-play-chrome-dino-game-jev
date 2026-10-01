@@ -1,0 +1,22 @@
+{
+  "name": "jev-dino",
+  "version": "1.0.0",
+  "description": "Play chrome://dino over CDP with decisions from a Jev (TypeSafe AI) decision server",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "server": "node src/server.js",
+    "driver": "node src/driver.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@typesafe-ai/sdk": "^0.6.0",
+    "express": "^5.2.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
